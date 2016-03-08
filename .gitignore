@@ -1,0 +1,34 @@
+# compiled PDFs
+*.pdf
+*.pgf
+
+# LaTeX
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.upa
+_minted-bsc/*
+
+## Build tool auxiliary files:
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+
+# Texpad
+.texpadtmp/
+
+# Mac Noise
+.DS_Store
+
+# Python
+*.pyc
