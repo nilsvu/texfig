@@ -18,7 +18,7 @@ Python's [Matplotlib](http://matplotlib.org) can save plots as [PGF vector files
 
 	```python
 	# import texfig first to configure Matplotlib's backend
-	import texfig
+	import texfig  # assuming texfig.py and an __init__.py is in the directory
 	# then, import PyPlot
 	import matplotlib.pyplot as plt
 
