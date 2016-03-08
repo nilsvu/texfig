@@ -1,6 +1,8 @@
 # TexFig
 
-Python's [Matplotlib](http://matplotlib.org) can save plots as [PGF vector files](https://en.wikipedia.org/wiki/PGF/TikZ), with text containing LaTeX code and all. LaTeX can render PGF files. Sounds like a perfect match, doesn't it? (It does. See [my bachelor thesis](https://github.com/knly/bsc-thesis/blob/master/dist/bsc_digital.pdf) for examples. No bragging intended.)
+Python's [Matplotlib](http://matplotlib.org) can save plots as [PGF vector files](https://en.wikipedia.org/wiki/PGF/TikZ), with text containing LaTeX code and all. LaTeX can render PGF files. Sounds like a perfect match, doesn't it? (It does. See [my bachelor thesis](https://github.com/knly/bsc-thesis/blob/master/dist/bsc_digital.pdf) for examples.)
+
+![Example for a PGF plot in LaTeX](example.png)
 
 
 ## Why PGF?
@@ -32,7 +34,7 @@ Python's [Matplotlib](http://matplotlib.org) can save plots as [PGF vector files
 
 2. Now `\usepackage{pgf}` and `\input` the PGF file in your LaTeX document:
 
-	```python
+	```tex
 	% in the preamble
 	\usepackage{pgf}
 	% somewhere in your document
