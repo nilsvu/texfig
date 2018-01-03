@@ -1,5 +1,7 @@
 # TexFig
 
+[![DOI](https://zenodo.org/badge/53438825.svg)](https://zenodo.org/badge/latestdoi/53438825)
+
 Python's [Matplotlib](http://matplotlib.org) can save plots as [PGF vector files](https://en.wikipedia.org/wiki/PGF/TikZ), with text containing LaTeX code and all. LaTeX can render PGF files. Sounds like a perfect match, doesn't it? (It does. See [my bachelor thesis](https://github.com/knly/bsc-thesis/blob/master/dist/bsc_digital.pdf) for examples.)
 
 ![Example for a PGF plot in LaTeX](example.png)
