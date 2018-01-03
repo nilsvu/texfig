@@ -21,7 +21,7 @@ Python's [Matplotlib](http://matplotlib.org) can save plots as [PGF vector files
 	```
 
 	to test your Python and LaTeX setup.
-2. Copy the `texfig.py` file next to your Python script. It is just some setup and utility code for `matplotlib`, so feel free to edit any configurations within.
+2. Copy the `texfig.py` file next to your Python script. It is just some simple setup and utility code for `matplotlib` to get you started, so feel free to edit any configurations within.
 3. Use `texfig` to generate PGF plots:
 
 	```python
@@ -52,3 +52,13 @@ Python's [Matplotlib](http://matplotlib.org) can save plots as [PGF vector files
 	```
 
 5. Admire the beauty of LaTeX vector plots.
+
+
+## Contact
+
+TexFig was created and is maintained by [Nils Leif Fischer](https://nilsleiffischer.de).
+
+
+## License
+
+TexFig is released under the MIT license. See [LICENSE.md](LICENSE.md) for details.
