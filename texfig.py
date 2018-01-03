@@ -10,7 +10,7 @@ mpl.use('pgf')
 from math import sqrt
 default_width = 5.78853 # in inches
 default_ratio = (sqrt(5.0) - 1.0) / 2.0 # golden mean
- 
+
 mpl.rcParams.update({
     "text.usetex": True,
     "pgf.texsystem": "xelatex",
@@ -25,7 +25,7 @@ mpl.rcParams.update({
         r"\usepackage[utf8x]{inputenc}",
         r"\usepackage[T1]{fontenc}",
         # macros defined here will be available in plots, e.g.:
-        # r"\newcommand{\vect}[1]{#1}",
+        r"\newcommand{\vect}[1]{#1}",
         # You can use dummy implementations, since you LaTeX document
         # will render these properly, anyway.
     ],

@@ -14,7 +14,15 @@ Python's [Matplotlib](http://matplotlib.org) can save plots as [PGF vector files
 
 ## Usage
 
-1. Use `texfig` to generate PGF plots:
+1. [Download](https://github.com/nilsleiffischer/texfig/archive/master.zip) the repository and run
+
+ 	```bash
+	python example.py
+	```
+
+	to test your Python and LaTeX setup.
+2. Copy the `texfig.py` file next to your Python script. It is just some setup and utility code for `matplotlib`, so feel free to edit any configurations within.
+3. Use `texfig` to generate PGF plots:
 
 	```python
 	# import texfig first to configure Matplotlib's backend
@@ -29,10 +37,12 @@ Python's [Matplotlib](http://matplotlib.org) can save plots as [PGF vector files
 	# save your plot as both a PDF and a PGF file with texfig (or save a '.pfg' file on your own)
 	texfig.savefig("example_plot")
 	```
-	
-	You can adjust the settings in `texfig.py` to your liking.
 
-2. Now `\usepackage{pgf}` and `\input` the PGF file in your LaTeX document:
+	You can adjust the settings in `texfig.py` to your liking. In particular, here you can define any macros that you have implemented in your LaTeX document and that you wish to use in your plots. Don't worry about implementing them correctly here, since they are rendered by your LaTeX document later anyway.
+
+	> Make sure that no call to change matplotlib backends precedes the `import texfig` statements, and do not change backends afterwards either. In particular, refrain from using `%matplotlib` configurations in Jupyter Notebooks.
+
+4. Now `\usepackage{pgf}` and `\input` the PGF file in your LaTeX document:
 
 	```tex
 	% in the preamble
@@ -41,4 +51,4 @@ Python's [Matplotlib](http://matplotlib.org) can save plots as [PGF vector files
 	\input{example_plot.pgf}
 	```
 
-3. Admire the beauty of LaTeX vector plots.
+5. Admire the beauty of LaTeX vector plots.
