@@ -26,7 +26,7 @@ mpl.rcParams.update({
         r"\usepackage[T1]{fontenc}",
         # macros defined here will be available in plots, e.g.:
         r"\newcommand{\vect}[1]{#1}",
-        # You can use dummy implementations, since you LaTeX document
+        # You can use dummy implementations, since your LaTeX document
         # will render these properly, anyway.
     ],
 })
