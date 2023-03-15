@@ -21,7 +21,7 @@ mpl.rcParams["font.family"] = "serif"
 mpl.rcParams["font.sans-serif"] = []
 mpl.rcParams["font.monospace"] = []
 mpl.rcParams["figure.figsize"] = [default_width, default_width * default_ratio]
-mpl.rcParams[ "pgf.preamble"] =  [
+mpl.rcParams[ "pgf.preamble"] =  "\n".join([
         # put LaTeX preamble declarations here
         r"\usepackage[utf8x]{inputenc}",
         r"\usepackage[T1]{fontenc}",
@@ -29,7 +29,7 @@ mpl.rcParams[ "pgf.preamble"] =  [
         r"\newcommand{\vect}[1]{#1}",
         # You can use dummy implementations, since your LaTeX document
         # will render these properly, anyway.
-    ]
+    ])
 
 import matplotlib.pyplot as plt
 
