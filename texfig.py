@@ -10,12 +10,8 @@ mpl.use('pgf')
 from math import sqrt
 default_width = 5.78853 # in inches
 default_ratio = (sqrt(5.0) - 1.0) / 2.0 # golden mean
-
 mpl.rcParams["text.usetex"] = True
-
 mpl.rcParams["pgf.texsystem"] = "xelatex"
-mpl.rcParams["pgf.rcfonts"] = False
-
 mpl.rcParams["pgf.rcfonts"] = False
 mpl.rcParams["font.family"] = "serif"
 mpl.rcParams["font.sans-serif"] = []
